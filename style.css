@@ -1,0 +1,200 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #e0f7fa);
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #1e88e5;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation */
+nav {
+    background-color: #1976d2;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: inline-block;
+    position: relative;
+    padding: 5px 0; /* Spazio per la linea animata */
+}
+
+/* Animazione della linea sottostante */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px; /* Altezza della linea animata */
+    background-color: #ffffff; /* Colore della linea animata */
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+
+a:hover::before {
+    width: 100%;
+}
+
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+section .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+section .text {
+    max-width: 600px;
+    text-align: left;
+}
+
+#surf {
+    background-color: rgba(41, 182, 246, 0.7);
+    color: #fff;
+    background-image: url('images/surf-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#snowboard {
+    background-color: rgba(129, 212, 250, 0.7);
+    color: #fff;
+    background-image: url('images/snowboard-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#skateboarding {
+    background-color: rgba(255, 183, 77, 0.7);
+    color: #fff;
+    background-image: url('images/skateboard-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#About {
+    background-color: rgba(23, 199, 96, 0.842);
+    color: #fff;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+/* Footer */
+footer {
+    background-color: #1976d2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Parallax effect */
+.parallax {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Animations */
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#back-to-top:hover {
+    background-color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section .content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    section img {
+        max-width: 100%;
+    }
+}
