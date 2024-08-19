@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the thrill of extreme sports like Surfing, Snowboarding, and Skateboarding. Join us to experience the ultimate adventure.">
     <meta name="keywords" content="Extreme Sports, Surfing, Snowboarding, Skateboarding, Adventure">
+    <meta property="og:title" content="Extreme Element">
+    <meta property="og:description" content="Experience the ultimate adventure with Extreme Sports.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Extreme Element</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preload" href="style.css" as="style">
     <link rel="preload" href="script.js" as="script">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>Extreme Element 🌲</h1>
+        <div class="header-container">
+            <h1>Extreme Element</h1>
+            <p>Conquer Waves, Snow, and Concrete</p>
+            <div class="header-animation"></div> <!-- Aggiunta animazione d'introduzione -->
+        </div>
     </header>
 
     <nav aria-label="Main navigation">
@@ -27,65 +39,87 @@
 
     <main>
         <section id="surf" class="parallax">
+            <div class="overlay"></div>
             <div class="content">
-                <img src="images/surfing.jpg" alt="Surfing Image">
-                <div class="text">
-                    <h2>Surf 🏄🏻‍♂️</h2>
-                    <br>
-                    <h3>Embrace the Thrill of the Waves: Dive into the Ultimate Surfing Experience</h3>
-                    <p>Unleash your inner adventurer as you ride the untamed waves of the ocean. Surfing isn't just a sport it's a way of life that connects you to the rhythm of the sea. Whether you're carving through the crest of a massive swell or catching your first gentle wave, each moment on the water is a dance with nature’s most exhilarating force. Join us and discover the freedom of surfing, where every ride is a new story and every wave a thrilling challenge. Let the ocean be your playground, and the surf your endless adventure.</p>
+                <img src="images/surfing.jpg" alt="Surfing Image" class="fade-in">
+                <div class="text slide-in-left">
+                    <h2>Surf</h2>
+                    <h3>"Embrace the Thrill of the Waves: Dive into the Ultimate Surfing Experience"</h3>
+                    <p>Unleash your inner adventurer as you ride the untamed waves of the ocean. Surfing isn't just a sport; it's a way of life that connects you to the rhythm of the sea. Whether you're carving through the crest of a massive swell or catching your first gentle wave, each moment on the water is a dance with nature’s most exhilarating force. Join us and discover the freedom of surfing, where every ride is a new story and every wave a thrilling challenge. Let the ocean be your playground, and the surf your endless adventure.</p>
+                    <a href="#contact" class="cta-button">Surf With Us</a> <!-- Pulsante CTA per maggiore interazione -->
                 </div>
             </div>
         </section>
 
         <section id="snowboard" class="parallax">
+            <div class="overlay"></div>
             <div class="content">
-                <img src="images/snowboarding.jpg" alt="Snowboarding Image">
-                <div class="text">
-                    <h2>Snowboard 🏂</h2>
-                    <br>
-                    <h3>Ride the Powder: Elevate Your Snowboarding Adventure</h3>
+                <img src="images/snowboarding.jpg" alt="Snowboarding Image" class="fade-in">
+                <div class="text slide-in-right">
+                    <h2>Snowboard</h2>
+                    <h3>"Ride the Powder: Elevate Your Snowboarding Adventure"</h3>
                     <p>Feel the rush as you carve through pristine snow and conquer the slopes with unrivaled freedom. Snowboarding is more than a sport—it's an exhilarating journey through winter’s wonderland. Whether you're mastering the art of the perfect descent or catching air on epic jumps, each ride is a thrilling testament to your courage and skill. Embrace the adrenaline, navigate the untouched terrain, and experience the ultimate fusion of speed and grace. Join us to turn the mountain into your playground and let every run be a testament to your passion for snowboarding.</p>
+                    <a href="#contact" class="cta-button">Ride With Us</a>
                 </div>
             </div>
         </section>
 
         <section id="skateboarding" class="parallax">
+            <div class="overlay"></div>
             <div class="content">
-                <img src="images/skateboarding.jpg" alt="Skateboarding Image">
-                <div class="text">
-                    <h2>Skateboarding 🛹</h2>
-                    <br>
-                    <h3>Feel the Pulse of the Pavement: Discover the Art of Skateboarding</h3>
+                <img src="images/skateboarding.jpg" alt="Skateboarding Image" class="fade-in">
+                <div class="text slide-in-left">
+                    <h2>Skateboarding</h2>
+                    <h3>"Feel the Pulse of the Pavement: Discover the Art of Skateboarding"</h3>
                     <p>Step into a world where every street and skate park becomes a canvas for your creativity and skill. Skateboarding is a dynamic blend of athleticism and artistry, where tricks and stunts transform urban landscapes into your personal playground. Whether you’re grinding rails, perfecting your kickflip, or just cruising with style, each ride is a chance to express yourself and push your limits. Embrace the thrill of the grind, the satisfaction of landing that perfect trick, and the joy of skating with friends. Dive into the vibrant culture of skateboarding and let the pavement be your stage.</p>
+                    <a href="#contact" class="cta-button">Skate With Us</a>
                 </div>
             </div>
         </section>
 
         <section id="About" class="parallax">
+            <div class="overlay"></div>
             <div class="content">
-                <div class="text">
-                    <h2>About Project 🙋🏻‍♂️: "Extreme Elements – Conquering Waves, Snow, and Concrete"</h2>
-                    <br>
+                <img src="images/Extreme Element.webp" alt="Extreme Sports Image" class="fade-in">
+                <div class="text slide-in-right">
+                    <h2>About Project: "Extreme Elements – Conquering Waves, Snow, and Concrete"</h2>
                     <h3>What is Extreme Elements?</h3>
                     <p>Extreme Elements is a dedicated initiative designed to explore and celebrate the world of surfing, snowboarding, and skateboarding. But this isn’t just a project about extreme sports; it’s a dynamic platform that connects enthusiasts, novices, and anyone curious to learn about these sports in an immersive and exciting way.</p>
-                    <br>
                     <h3>Our Mission</h3>
                     <p>Our mission is twofold. On one hand, we aim to provide a complete educational resource that guides beginners through the basics and advanced techniques of each sport. On the other, we are committed to building a vibrant and passionate community where experts and newcomers alike can share their experiences, stories, and enthusiasm for waves, snow, and concrete.</p>
-                    <br>
                     <h3>Why Extreme Elements is Special</h3>
                     <p>Extreme Elements is not just an informational platform; it’s a journey into the heart of your favorite extreme sports. We don’t just want you to learn techniques and strategies; we want you to feel the energy and passion that these sports represent. Every section of our project is designed to spark excitement and inspiration, making the learning experience both thrilling and engaging.</p>
                 </div>
             </div>
         </section>
+
+        <section id="contact" class="contact-section">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>Ready to take on the waves, conquer the slopes, or master the pavement? Get in touch with us today!</p>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <h3>Made with ❤️ by Dadda</h3>
-        <p>Extreme Elements – Where Every Day is an Adventure.</p>
+        <div class="footer-container">
+            <h3>Made with ❤️ by Dadda</h3>
+            <p>Extreme Elements – Where Every Day is an Adventure.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/davideeviscuso/"><img src="images/38-instagram-2-512.webp" alt="Instagram"></a>
+            </div>
+        </div>
     </footer>
 
+    <button id="back-to-top" aria-label="Back to Top">⬆️</button>
 
     <script src="script.js"></script>
 </body>
+
 </html>
